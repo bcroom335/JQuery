@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Select</title>
+<script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+</head>
+<body>
+	<form>
+		<p><b>Choose a name:</b></p>
+		<span id="show"></span>
+	</form>
+	<script>
+		#.ajax({
+			url:"SelectName.jsp",
+			type:"GET",
+			success: function(data){
+				showNames(data);
+			}
+		})
+		function showNames(data){
+			var names=data.split(",");
+			for(i in names)
+				txt +="<option value='"+names[i]+"'>"+names[i]+"</option>";
+			$("#show").html(txt);
+		}
+	</script>
+</body>
+</html>

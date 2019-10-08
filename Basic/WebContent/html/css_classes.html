@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script>
+	$(document).ready(function() {
+		$("#btn1").click(function() {
+			$("h1,h2").addClass("blue");
+			$("div").addClass("important");
+		});
+		
+		$("#btn2").click(function() {
+			$("#p1").addClass("important blue");
+		});
+		
+		$("#btn3").click(function() {
+			$("h1,h2,p").removeClass("blue");
+		});
+		
+		$("#btn4").click(function() {
+			$("h1,h2,p").toggleClass("blue");
+		});
+	});
+</script>
+<style type="text/css">
+	.important {
+		font-weight: bold;
+		font-size: xx-large;
+	}
+	.blue {
+		color: blue;
+	}
+</style>
+</head>
+
+<body>
+	<button id="btn1">Add class to elements</button>
+	<button id="btn2">Add classes to first p element</button>
+	<button id="btn3">Remove class from elements</button>
+	<button id="btn4">Toggle class</button>
+	
+	<h1>Heading 1</h1>
+	<h2>Heading 2</h2>
+	<p id="p1">This is a paragraph.</p>
+	<p>This is another paragraph.</p>
+	<div>This is some important text!</div>
+</body>
+</html>

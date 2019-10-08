@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>jQuery UI Tabs - Default functionality</title>
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+	<script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+	<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+	<link rel="stylesheet" href="/resources/demos/style.css" />
+	<script>
+		$(function() {
+			$("#tabs").tabs();
+		});
+	</script>
+</head>
+
+<body>
+	<div id="tabs">
+		<ul>
+			<li><a href="#tabs-1">Development</a></li>
+			<li><a href="#tabs-2">Support</a></li>
+			<li><a href="#tabs-3">About</a></li>
+		</ul>
+		<div id="tabs-1">
+			<p>The current stable release is 1.10.3. Check out our Roadmap to find out what we're 
+				working on.</p>
+			<p>We're also working on our new sites. All of our sites are on GitHub, with the 
+				repositories named after the respective domain. For example, the repository for 
+				this site is jquery/jqueryui.com.</p>
+		</div>
+		<div id="tabs-2">
+			<p>The jQuery UI community is very active and provides a friendly, helpful environment 
+				when you need development advice or have ideas on how to improve a script. 
+				The jQuery UI team encourages everyone to actively participate in the development 
+				of the library.</p>
+		</div>
+		<div id="tabs-3">
+			<p>jQuery UI is a curated set of user interface interactions, effects, widgets,
+				and themes built on top of the jQuery JavaScript Library. Whether you're building
+				highly interactive web applications or you just need to add a date picker to a 
+				form control, jQuery UI is the perfect choice.</p>
+		</div>
+	</div>
+</body>
+</html>

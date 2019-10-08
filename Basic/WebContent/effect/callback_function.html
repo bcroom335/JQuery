@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script>
+	$(document).ready(function() {
+		$("#btn1").click(function() {
+			$("p").hide("slow");
+			alert("The paragraphs are now hidden");
+		});
+		
+		$("#btn2").click(function() {
+			$("p").hide("slow", function() {
+				alert("The paragraph is now hidden");
+			});
+		});
+	});
+</script>
+</head>
+<body>
+	<button id="btn1">Hide without callback</button>
+	<button id="btn2">Hide with callback</button>
+	<p>This is a paragraph.</p>
+</body>
+</html>

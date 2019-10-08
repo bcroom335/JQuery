@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script>
+	$(document).ready(function() {
+		$("#btn1").click(function() {
+			$("ul li:first").hide();
+		});
+		$("#btn2").click(function() {
+			$("ul li:last").hide();
+		});
+		$("#btn3").click(function() {
+			$("ul li:first-child").hide();
+		});
+		$("#btn4").click(function() {
+			$("ul li:last-child").hide();
+		});
+	});
+</script>
+</head>
+
+<body>
+	<button id="btn1">Hide 'ul li:first'</button>
+	<button id="btn2">Hide 'ul li:last'</button>
+	<button id="btn3">Hide 'ul li:first-child'</button>
+	<button id="btn4">Hide 'ul li:last-child'</button>
+	
+	<p>List 1:</p>
+	<ul>
+		<li>Coffee</li>
+		<li>Milk</li>
+		<li>Tea</li>
+	</ul>
+
+	<p>List 2:</p>
+	<ul>
+		<li>Coffee</li>
+		<li>Milk</li>
+		<li>Tea</li>
+	</ul>
+</body>
+</html>

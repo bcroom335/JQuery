@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ 	input:focus{
+ 		background-color:#cccccc;
+ 	}
+</style>
+
+</head>
+<body>
+	Name:<input type="text" name="fullname"><br>
+	Email:<input type="text" name="email">
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>jQuery.each demo</title>
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<style>
+		#demo1 { color: blue; }
+		#demo2 { color: green; }
+	</style>
+</head>
+<body>
+	<p>This is first paragraph.
+	<p>This is second paragraph.
+	<p>This is third paragraph.
+	<div id="demo"></div>
+	<div id="demo1"></div><p>
+	<div id="demo2"></div>
+	
+	<script>
+		$("p").each(function() {
+			$("#demo").append($(this).text() + "<br>");
+		});
+		
+		var arr = [ "one", "two", "three", "four", "five" ];
+
+		jQuery.each(arr, function(idx, val) {
+			$("#demo1").append(idx + " : " + val + "<br>");
+		});
+		$.each(arr, function(idx, val) {
+			$("#demo1").append(idx + " : " + val + "<br>");
+		});
+		
+		var obj = {	name:"Tina", age:"28", mobile:"0935112233" };
+
+		jQuery.each(obj, function(key, val) {
+			$("#demo2").append(key + " : " + val + "<br>");
+		});
+		$.each(obj, function(key, val) {
+			$("#demo2").append(key + " : " + val + "<br>");
+		});
+	</script>
+</body>
+</html>

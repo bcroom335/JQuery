@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script>
+	$(document).ready(function(){
+		$("button").click(function(){
+			$()"p").hide();
+		});
+	});
+</script>
+</head>
+<body>
+	<h2>This is a heading</h2>
+	<p>This is paragraph one.<p>
+	<p>This is paragraph two.<p>
+	<button>Click me</button>
+
+</body>
+</html>

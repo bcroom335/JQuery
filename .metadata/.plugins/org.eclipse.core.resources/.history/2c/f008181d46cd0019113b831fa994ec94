@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script>
+	$(document).ready(function() {
+		$("#btn1").click(function() {
+			$("p").hide();
+		});
+		$("#btn2").click(function() {
+			$(".test").hide();
+		});
+		$("#btn3").click(function() {
+			$("#test1").hide();
+		});
+		$("#btn4").click(function() {
+			$(this).hide();
+		});
+		$("#btn4").click(function() {
+			$(this).hide();
+		});
+	});
+</script>
+</head>
+
+<body>
+	<button id="btn1">Hide all p tag</button>
+	<button id="btn2">Hide all with class='test'</button>
+	<button id="btn3">Hide id='test'</button>
+	<button id="btn4">Hide this</button>
+	<button id="btn5">$=</button>
+	<button id="btn6">|=</button>
+	<button id="btn7">^=</button>
+	<button id="btn8">~=</button>
+	<button id="btn9">*=</button>
+	
+	<h2 class="test">This is a heading</h2>
+	<p class="test">This is first paragraph.</p>
+	<p id="test1">This is second paragraph.</p>
+	<p>This is third paragraph.</p>
+	input1:<input type="text" value="Lin Jeremy"><br>
+	input2:<input type="text" value="LinJeremy"><br>
+	input3:<input type="text" value="Jeremy Lin"><br>
+	input4:<input type="text" value="Lin"><br>
+	input5:<input type="text" value="Lin-Jeremy"><br>
+</body>
+</html>

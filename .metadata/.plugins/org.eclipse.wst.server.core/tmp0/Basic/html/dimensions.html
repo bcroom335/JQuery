@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script>
+	$(document).ready(function() {
+		$("#btn1").click(function() {
+			var txt = "";
+			txt+="Width of div: " + $("#div1").width() + "<br>";
+			txt+="Height of div: " + $("#div1").height() + "<br>";
+			txt+="Inner width of div: " + $("#div1").innerWidth() + "<br>";
+			txt+="Inner height of div: " + $("#div1").innerHeight() + "<br>";
+			txt+="Outer width of div: " + $("#div1").outerWidth() + "<br>";
+			txt+="Outer height of div: " + $("#div1").outerHeight() + "<br>";
+			txt+="Outer width of div (margin included): " + $("#div1").outerWidth(true) + "<br>";
+			txt+="Outer height of div (margin included): " + $("#div1").outerHeight(true);
+			$("#div1").html(txt);
+		});
+		
+		$("#btn2").click(function() {
+			var txt = "";
+			txt+="Document width/height: " + $(document).width();
+			txt+=" X " + $(document).height()  + "<br>";
+			txt+="Window width/height: " + $(window).width();
+			txt+=" X " + $(window).height();
+			$("#div1").html(txt);
+		});
+		
+		$("#btn3").click(function() {
+			$("#div1").width(700).height(400);
+		});
+	});
+</script>
+</head>
+<body>
+	<button id="btn1">Display dimensions of div</button>
+	<button id="btn2">Display dimensions of document and window</button>
+	<button id="btn3">Resize div</button>
+
+	<div id="div1"
+		style="height: 200px; width: 350px; padding: 10px; margin: 15px; border: 10px solid blue; background-color: lightblue;">
+	</div>
+</body>
+</html>
+

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script>
+	$(document).ready(function() {
+		$("#btn1").click(function() {
+			$("div").animate({
+				left : '250px'
+			});
+		});
+
+		$("#btn2").click(function() {
+			$("div").animate({
+				left : '250px',
+				opacity : '0.5',
+				height : '150px',
+				width : '150px'
+			});
+		});
+
+		$("#btn3").click(function() {
+			$("div").animate({
+				left : '250px',
+				height : '+=150px',
+				width : '+=150px'
+			});
+		});
+		
+		$("#btn4").click(function() {
+			$("div").animate({
+				height:'toggle'
+			});
+		});
+		
+		$("#btn5").click(function() {
+			var div=$("div");
+			div.animate({height:'300px',opacity:'0.4'},"slow");
+			div.animate({width:'300px',opacity:'0.8'},"slow");
+			div.animate({height:'100px',opacity:'0.4'},"slow");
+			div.animate({width:'100px',opacity:'0.8'},"slow");
+		});
+		
+		$("#btn6").click(function() {
+			var div=$("div");
+			div.animate({left:'100px'},"slow");
+			div.animate({fontSize:'2em'},"slow");
+		});		
+	});
+</script>
+</head>
+
+<body>
+	<button id="btn1">Start Animation 1</button>
+	<button id="btn2">Start Animation 2</button>
+	<button id="btn3">Start Animation 3</button>
+	<button id="btn4">Start Animation 4</button>
+	<button id="btn5">Start Animation 5</button>
+	<button id="btn6">Start Animation 6</button><p>
+	<div
+		style="background: #98bf21; height: 100px; width: 100px; position: absolute;">HELLO
+	</div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Name City Form</title>
+<script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+</head>
+<body>
+		<button type="button" id="get">using .get</button>
+		<button type="button" id="ajax">using .ajax</button>
+	<div id="demo"></div>
+	<script>
+		$("#get").click(function(){
+			$.get("NameCity.jsp?name=Henry&city=Taipei",function(data,status){
+				if(status=="success")
+					$("#demo").html(data);
+			})
+		})
+		
+		$("#ajax").click(function(){
+			$.ajax({
+				url:"NameCity.jsp?name=Mary&city=LA",
+				type: "GET",
+				success: function(data){
+					$("#demo").html(data);
+				}
+			});
+		});
+	</script>
+</body>
+</html>

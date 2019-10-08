@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script>
+	$(document).ready(function() {
+		$("btn1").click(function() {
+			$("div.ex1").toggle("slow");
+		});
+		$("#btn2").click(function() {
+			$("div.ex2").toggle("slow");
+		});
+	});
+</script>
+<style type="text/css">
+	div {
+		background-color: #e5eecc;
+		padding: 7px;
+		border: solid 1px #c3c3c3;
+	}
+</style>
+</head>
+
+<body>
+	<h3>Island Trading</h3>
+	<button id="btn1">Hide me</button>
+	<div class="ex1">
+		<p>
+			Contact: Helen Bennett<br>
+			Garden House Crowther Way<br>
+			London
+		</p>
+	</div>
+
+	<h3>Paris speciality</h3>
+	<button id="btn2">Hide me</button>
+	<div class="ex2">
+		<p>
+			Contact: Marie Bertrand<br>
+			265, Boulevard Charonne<br>
+			Paris
+		</p>
+	</div>
+</body>
+</html>
